@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Recipeek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+
+        <div id="splash-screen" class="screen active">
+            <div class="splash-content">
+                <img src="recipeek_logo_transparent.png" alt="Recipeek Logo" class="splash-logo">
+                <h2 class="splash-title">Start Cooking</h2>
+                <p class="splash-subtitle">Let's join our community to cook better food!</p>
+            </div>
+            <button id="get-started-btn" class="btn btn-primary btn-full">Get Started</button>
+        </div>
+
+        <div id="login-screen" class="screen">
+            <h2>Welcome Back!</h2>
+            <p class="subtitle">Please enter your account here</p>
+            <form>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Email or phone number">
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <a href="#" id="forgot-password-link" class="forgot-password">Forgot password?</a>
+                <button class="btn btn-primary btn-full">Login</button>
+            </form>
+            <div class="divider">Or continue with</div>
+            <button class="btn btn-google btn-full"><i class="fab fa-google"></i> Google</button>
+            <p class="footer-text">Don't have any account? <a href="#" id="go-to-signup-link">Sign Up</a></p>
+        </div>
+        
+        <div id="signup-screen" class="screen">
+            <h2>Welcome!</h2>
+            <p class="subtitle">Please enter your account here</p>
+            <form id="signup-form">
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="signup-username" placeholder="Recipeek_123">
+                </div>
+                <small class="validation-message" id="username-error"></small>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="password-rules">
+                    <p><i class="fa-solid fa-check-circle"></i> Atleast 6 characters</p>
+                    <p><i class="fa-solid fa-check-circle"></i> Contains a number</p>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Sign Up</button>
+            </form>
+             <p class="footer-text">Already have an account? <a href="#" id="go-to-login-link">Login</a></p>
+        </div>
+
+        <div id="recovery-screen" class="screen">
+             <h2>Password recovery</h2>
+            <p class="subtitle">Enter your email to recover your password</p>
+            <form>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter your Email">
+                </div>
+                <button id="send-recovery-btn" class="btn btn-primary btn-full">Send Code</button>
+            </form>
+        </div>
+
+        <div id="verification-screen" class="screen">
+            <h2>Check your email</h2>
+            <p class="subtitle">We've sent the code to your email</p>
+            <div class="code-inputs">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+            </div>
+            <p class="code-timer">code expires in: <span>03:12</span></p>
+            <button id="verify-code-btn" class="btn btn-primary btn-full">Verify</button>
+            <button class="btn btn-secondary btn-full">Send again</button>
+        </div>
+
+        <div id="profile-creation-screen" class="screen">
+            <h2>Create Your Profile</h2>
+            <p class="subtitle">Please enter your details here</p>
+            <div class="profile-pic-uploader">
+                <img src="profile_avatar.png" alt="Default Profile Pic" id="profile-preview">
+                <input type="file" id="photo-upload" accept="image/*" hidden>
+                <button id="upload-photo-btn" class="btn-upload">Upload Photo (Optional)</button>
+            </div>
+            <form>
+                <label>First Name</label>
+                <div class="input-group">
+                    <input type="text" placeholder="Hriday">
+                </div>
+                <label>Last Name</label>
+                <div class="input-group">
+                    <input type="text" placeholder="Dutta">
+                </div>
+                <label>Occupation</label>
+                <div class="input-group">
+                    <input type="text" placeholder="Chef">
+                </div>
+                <button id="profile-next-btn" class="btn btn-red btn-full">Next</button>
+            </form>
+        </div>
+
+        <div id="preference-screen" class="screen">
+            <h2>Choose your preference</h2>
+            <div class="preference-grid">
+                <div class="preference-item">
+                    <img src="southindian_cuisine.jpg" alt="South Indian">
+                    <p>South Indian</p>
+                </div>
+                <div class="preference-item">
+                    <img src="italian_cuisine.jpg" alt="Italian">
+                    <p>Italian</p>
+                </div>
+                 <div class="preference-item">
+                    <img src="northindian_cuisine.jpg" alt="North Indian">
+                    <p>North Indian</p>
+                </div>
+                 <div class="preference-item">
+                    <img src="arabic_cuisine.jpg" alt="Arabic">
+                    <p>Arabic</p>
+                </div>
+                 <div class="preference-item">
+                    <img src="chinese_cuisine.jpg" alt="Chinese">
+                    <p>Chinese</p>
+                </div>
+                 <div class="preference-item">
+                    <img src="american_cuisine.png" alt="American">
+                    <p>American</p>
+                </div>
+            </div>
+             <button id="save-preferences-btn" class="btn btn-primary btn-full">Save Preferences</button>
+        </div>
+
+        <div id="confirmation-screen" class="screen">
+            <div class="confirmation-content">
+                 <i class="fas fa-check-circle confirmation-icon"></i>
+                <h2>Profile Created!</h2>
+                <p>Your preferences have been saved. Welcome to Recipeek!</p>
+                <button id="go-home-btn" class="btn btn-primary btn-full">Start Cooking</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
