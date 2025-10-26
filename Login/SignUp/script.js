@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("Entering the main app!");
         clearInputs();
         showScreen('splash-screen');
-        window.location.href='../SignUp/index.html';
+        window.location.href='../../Home-Search/index.html';
     });
 
 

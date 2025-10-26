@@ -1,0 +1,24 @@
+:root { --primary-green: #059669; --text-dark: #1F2937; --text-light: #6B7280; --border-color: #E5E7EB; --bg-light: #F9FAFB; --white: #FFFFFF; --font-family: 'Poppins', sans-serif; }
+body { font-family: var(--font-family); background-color: #333; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.app-container { width: 100%; max-width: 450px; background-color: var(--bg-light); box-shadow: 0 0 20px rgba(0,0,0,0.15); overflow: hidden; position: relative; height: 850px; max-height: 90vh; border-radius: 20px; }
+.page { width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: var(--bg-light); display: none; flex-direction: column; transition: opacity 0.3s ease-in-out; opacity: 0; }
+.page.active-page { display: flex; opacity: 1; z-index: 10; }
+.page-content { padding: 15px; flex-grow: 1; overflow-y: auto; }
+h2 { font-size: 1.5rem; font-weight: 600; color: var(--text-dark); }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: var(--white); border-bottom: 1px solid var(--border-color); }
+.header h1 { font-size: 1.25rem; font-weight: 600; margin: 0; }
+.header .material-symbols-outlined { cursor: pointer; font-size: 28px; color: var(--text-dark); }
+.recipe-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.recipe-card { background-color: var(--white); border-radius: 16px; overflow: hidden; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.recipe-card img { width: 100%; height: 120px; object-fit: cover; }
+.recipe-card-info { padding: 12px; }
+.recipe-card-info h4 { margin: 0; font-size: 1rem; color: var(--text-dark); }
+#recipe-details-page { background-color: #475569; padding: 0; }
+.detail-header img { width: 100%; height: 350px; object-fit: cover; }
+.detail-back-btn { position: absolute; top: 15px; left: 15px; background-color: rgba(0,0,0,0.4); color: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.detail-content { background-color: var(--bg-light); padding: 20px; border-radius: 24px 24px 0 0; margin-top: -24px; position: relative; }
+.detail-content h2 { font-size: 1.8rem; margin: 0; }
+.detail-content h3 { margin-top: 20px; }
+.detail-content ul { list-style: none; padding: 0; }
+.detail-content li { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.detail-content .check { color: var(--primary-green); font-weight: 600; }

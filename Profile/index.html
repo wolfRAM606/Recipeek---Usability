@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Recipeek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="app-container">
+        <div id="profile-page" class="page active-page">
+            <header class="header">
+                <span id="back-to-home-btn" class="back-btn material-symbols-outlined">arrow_back</span>
+                <h1>My Profile</h1>
+                <img src="slider.png" alt="Settings" class="settings-btn" data-target="preferences-page">
+            </header>
+            <div class="page-content">
+                <div class="profile-header">
+                    <img src="profile_avatar.png" alt="Profile Picture">
+                    <h2>Hriday Dutta</h2>
+                    <div class="profile-stats">
+                        <div><span>32</span><p>Recipes</p></div>
+                        <div><span>782</span><p>Following</p></div>
+                        <div><span>1.2K</span><p>Followers</p></div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <button class="tab-btn" data-tab="searched">Searched</button>
+                    <button class="tab-btn active" data-tab="favourites">Favourites</button>
+                </div>
+                <div id="favourites-content" class="tab-content active">
+                    <div class="recipe-grid">
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="pasta"><img src="pasta.png" alt="Pasta"><div class="recipe-card-info"><h4>Pasta</h4></div></div>
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="upma"><img src="rava_upma.png" alt="Rava Upma"><div class="recipe-card-info"><h4>Rava Upma</h4></div></div>
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="muttonBiryani"><img src="mutton_biryani.png" alt="Mutton Biryani"><div class="recipe-card-info"><h4>Mutton Biryani</h4></div></div>
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="masala"><img src="panner_butter_masala.png" alt="Paneer Butter Masala"><div class="recipe-card-info"><h4>Paneer Butter Masala</h4></div></div>
+                    </div>
+                </div>
+                <div id="searched-content" class="tab-content">
+                     <div class="recipe-grid">
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="panNoodles"><img src="pan_noodles.webp" alt="Pan Noodles"><div class="recipe-card-info"><h4>Pan Noodles</h4></div></div>
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="hakkaNoodles"><img src="chicken_hakka_noodles.jpg" alt="Chicken Hakka Noodles"><div class="recipe-card-info"><h4>Chicken Hakka Noodles</h4></div></div>
+                        <div class="recipe-card" data-target="recipe-details-page" data-recipe="schezwanNoodles"><img src="schezwan_noodles.jpg" alt="Schezwan Noodles"><div class="recipe-card-info"><h4>Schezwan Noodles</h4></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="recipe-details-page" class="page">
+             <div id="recipe-detail-content">
+                 </div>
+        </div>
+
+        <div id="preferences-page" class="page">
+            <header class="header">
+                <span class="back-btn material-symbols-outlined">arrow_back</span>
+                <h1>Preferences</h1>
+            </header>
+            <div class="page-content">
+                <p class="subheader">Change your preference</p>
+                <div class="cuisine-grid">
+                    <div class="cuisine-card" data-cuisine="south-indian"><img src="southindian_cuisine.jpg" alt="South Indian"><p>South Indian</p></div>
+                    <div class="cuisine-card" data-cuisine="italian"><img src="italian_cuisine.jpg" alt="Italian"><p>Italian</p></div>
+                    <div class="cuisine-card" data-cuisine="north-indian"><img src="northindian_cuisine.jpg" alt="North Indian"><p>North Indian</p></div>
+                    <div class="cuisine-card" data-cuisine="hyderabadi"><img src="mutton_biryani.png" alt="Hyderabadi"><p>Hyderabadi</p></div>
+                    <div class="cuisine-card" data-cuisine="chinese"><img src="chinese_cuisine.jpg" alt="Chinese"><p>Chinese</p></div>
+                    <div class="cuisine-card" data-cuisine="american"><img src="american_cuisine.png" alt="American"><p>American</p></div>
+                </div>
+                 <button class="btn-primary">Save Changes</button>
+            </div>
+        </div>
+        
+        <div id="loading-page" class="page">
+             <div class="loader-container">
+                 <div class="loader"></div>
+                 <p id="loading-text">Updating your preferences...</p>
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

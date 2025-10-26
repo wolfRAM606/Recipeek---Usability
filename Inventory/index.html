@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Recipeek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="page-header">
+            <span id="back-btn" class="material-symbols-outlined">arrow_back</span>
+            <h2 class="page-title">Inventory</h2>
+            <div class="header-actions">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <button id="sort-btn" class="sort-button">
+                    Sort <span class="material-symbols-outlined">swap_vert</span>
+                </button>
+            </div>
+        </header>
+
+        <main id="inventory-list" class="inventory-list-container">
+            </main>
+
+        <footer class="page-footer">
+            <button id="plan-my-meal-btn" class="btn-primary">Plan My Meal</button>        
+        </footer>
+
+        <div id="sort-modal" class="sort-modal-container">
+            <div class="sort-modal-content">
+                <h3>Sort By</h3>
+                <div class="sort-options">
+                    <button class="sort-option" data-sort="expiry">Expiry Date</button>
+                    <button class="sort-option" data-sort="quantity">Quantity</button>
+                    <button class="sort-option" data-sort="frequently">Frequently Used</button>
+                </div>
+                <div class="sort-modal-actions">
+                    <button id="sort-cancel-btn" class="btn-secondary">Cancel</button>
+                    <button id="sort-done-btn" class="btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

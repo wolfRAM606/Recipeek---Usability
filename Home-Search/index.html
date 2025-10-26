@@ -30,8 +30,8 @@
                              <span class="material-symbols-outlined">search</span>
                              <input type="text" id="home-search-bar" placeholder="Search" readonly>
                          </div>
-                         <span class="material-symbols-outlined icon-btn">shopping_cart</span>
-                         <span class="material-symbols-outlined icon-btn">account_circle</span>
+                         <span id="cart-icon" class="material-symbols-outlined icon-btn">shopping_cart</span>
+                         <span id="profile-icon-btn" class="material-symbols-outlined icon-btn">account_circle</span>
                     </div>
                 </header>
                 
@@ -39,7 +39,7 @@
                     <div class="category-tabs">
                         <button class="tab-btn active">Trending</button>
                         <button class="tab-btn">Quick & Easy</button>
-                        <button class="tab-btn">Explore</button>
+                        <button id="explore-btn" class="tab-btn">Explore</button>
                     </div>
 
                     <h2 class="section-title">Suggested Recipes</h2>
@@ -60,8 +60,8 @@
                         <span>9:41</span>
                         <div>
                            <span class="material-symbols-outlined">signal_cellular_alt</span>
-                            <span class="material-symbols-outlined">wifi</span>
-                            <span class="material-symbols-outlined">battery_full</span>
+                           <span class="material-symbols-outlined">wifi</span>
+                           <span class="material-symbols-outlined">battery_full</span>
                         </div>
                     </div>
                     <div class="search-container">
@@ -69,10 +69,10 @@
                         <div class="search-bar-wrapper flex-grow">
                              <span class="material-symbols-outlined">search</span>
                              <form id="search-form">
-                                <input type="text" id="search-input" placeholder="Noodles">
+                                 <input type="text" id="search-input" placeholder="Noodles">
                              </form>
                         </div>
-                        <span class="material-symbols-outlined icon-btn">shopping_cart</span>
+                        <span id="cart-icon" class="material-symbols-outlined icon-btn" >shopping_cart</span>
                     </div>
                 </header>
                  <main class="page-content">
@@ -93,8 +93,8 @@
                         <span>9:41</span>
                         <div>
                            <span class="material-symbols-outlined">signal_cellular_alt</span>
-                            <span class="material-symbols-outlined">wifi</span>
-                            <span class="material-symbols-outlined">battery_full</span>
+                           <span class="material-symbols-outlined">wifi</span>
+                           <span class="material-symbols-outlined">battery_full</span>
                         </div>
                     </div>
                     <div class="search-container">
@@ -103,7 +103,7 @@
                              <span class="material-symbols-outlined">search</span>
                              <input type="text" id="search-results-input" placeholder="Noodles" readonly>
                         </div>
-                        <span class="material-symbols-outlined icon-btn">shopping_cart</span>
+                        <span id="cart-icon" class="material-symbols-outlined icon-btn">shopping_cart</span>
                     </div>
                 </header>
                 <main class="page-content">
@@ -140,12 +140,10 @@
                             <span id="recipe-detail-likes">570 Likes</span>
                         </div>
                     </div>
-
                     <h3>Description</h3>
                     <p id="recipe-detail-desc">
                         Paneer Butter Masala is a rich and creamy North Indian curry made with soft paneer (Indian cottage cheese) cooked in a mildly spiced tomato, butter, and cream-based gravy.
                     </p>
-
                     <h3>Ingredients</h3>
                     <ul id="recipe-detail-ingredients" class="ingredients-list">
                        </ul>
